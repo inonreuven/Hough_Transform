@@ -6,6 +6,7 @@ Straight lines detection with Hough Transform using cv2 and scikit-learn.
   1.1 Hough transform 
 2. Requirments 
 3. Data 
+4. Hough transform 
 
 
 ## 1. Objective
@@ -47,3 +48,17 @@ from matplotlib import pyplot as plt
 ```
 ![original_inverted](https://user-images.githubusercontent.com/57630290/190173921-47b4ae3f-dafc-4e54-b40f-d995b72d3806.png)
 
+## 4. Hough transform 
+1. define upper and lower Theta 
+2. define number of samples 
+3. create angles axis 
+4. Hough transform 
+*Hough space*
+*theta* values and *r* values of each pixel in the x-y domain
+```
+theta_min = -np.pi/2
+theta_max = np.pi/2
+n_samples = 180
+angles = np.linspace(theta_min, theta_max, n_samples)
+hough_space, theta, r = hough_line(img_invert, angles)
+```
