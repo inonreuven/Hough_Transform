@@ -52,9 +52,7 @@ from matplotlib import pyplot as plt
 1. define upper and lower Theta 
 2. define number of samples 
 3. create angles axis 
-4. Hough transform 
-*Hough space*
-*theta* values and *r* values of each pixel in the x-y domain
+4. Hough transform: *Hough space* - create Hough domain, *theta* values and *r* values of each pixel in the x-y domain
 ```
 theta_min = -np.pi/2
 theta_max = np.pi/2
