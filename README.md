@@ -45,4 +45,5 @@ from matplotlib import pyplot as plt
     plt.imshow(img_invert, cmap='gray')
 
 ```
+![original_inverted](https://user-images.githubusercontent.com/57630290/190173921-47b4ae3f-dafc-4e54-b40f-d995b72d3806.png)
 
