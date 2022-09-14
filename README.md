@@ -34,7 +34,15 @@ from matplotlib import pyplot as plt
 ```
 
 ## 3. Data 
+1. loading the image 
+2. get the invert image
+3. plot both 
 ```
-pass
+    figure = plt.figure(figsize=(10, 5))
+    plt.subplot(1, 2, 1)
+    plt.imshow(img_orignal, cmap='gray')
+    plt.subplot(1, 2, 2)
+    plt.imshow(img_invert, cmap='gray')
+
 ```
 
