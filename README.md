@@ -59,4 +59,11 @@ theta_max = np.pi/2
 n_samples = 180
 angles = np.linspace(theta_min, theta_max, n_samples)
 hough_space, theta, r = hough_line(img_invert, angles)
+plt.subplot(1, 2, 1)
+plt.imshow(img_invert, cmap='gray')
+plt.subplot(1, 2, 2)
+plt.imshow(hough_space, cmap='gray')
 ```
+
+![Hough_domain](https://user-images.githubusercontent.com/57630290/190181850-900847fa-2501-42d8-9646-6b53cd5181fb.png)
+
