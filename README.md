@@ -14,6 +14,10 @@ This project aims to:
 2. Develop a detection program for straight lines. 
 
 ### 1.1 Hough transform 
+Each pixel in the image has infinite crossing lines: y = mx + b ([0,b], [-b/m,0]).
+Consider 1 pixel [x0,y0] in x-y domain: b = -x0m + y0 ([0,y0], [y0/x0]) 
+Only the straight line has the same [b,m] and this point is the peak in b-m domain. 
+
 ![Hough transform](https://user-images.githubusercontent.com/57630290/190166077-f1255603-1b25-42b6-8d2f-8460dbfc4c0e.png)
 
 ## 2. Requirments 
